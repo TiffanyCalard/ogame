@@ -1,87 +1,153 @@
-body{
+body {
     background: linear-gradient(to top, #336699 0%, #003366 100%);
-background-size: cover;
-background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .logo {
     display: flex;
     justify-content: center;
-    max-height : 110px;
-    width : auto;
+    margin-left: 130px;
+    max-height: 110px;
+    width: auto;
 }
 
 
-nav { 
+.navbar {
     display: flex;
     justify-content: center;
     font-family: "open sans";
-    padding: 0 15px;
-    
-    
+    width: auto;
+    background-color: #1a1a1a;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #c8c8c8;
+    font-size: 14px;
+    text-align: center;
+    padding: 1px 19px;
+    text-decoration: none;
+    background-color: #1a1a1a;
+    padding: 1%;
+
+}
+
+.navbar a:hover {
+    background-color: #333333;
+    color: #c8c8c8;
+    ;
 }
 
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
- 
-    
+    align-items:
+
 }
 
 .leftmenu {
-    order: 1;
-    display: flex;
+
+    flex: 1;
     flex-direction: column;
-    align-items: center;
     font-family: "roboto condensed";
-    font-size: 130%;
+    font-size: 15px;
     margin-right: 100px;
     margin-left: 100px;
+
 }
 
-.imagemid {
-    order: 2;
+.sectionmid {
 
-    display: flex;
-    justify-content: center;
+
+    flex: 2;
+    
+}
+
+.firstimgmid {
+
+    margin-bottom: 15px;
 }
 
 .rightmenu {
-    order: 3;
-    display: flex;
+
+    
+    flex: 3;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     font-family: "open sans";
-    margin-left: 100px;
+    margin-left: 60px;
     margin-right: 60px;
+  
 }
 
-a{ 
+a {
     color: #c8c8c8;
     text-decoration: none;
 
 }
 
-.leftmenu button {
+.leftmenu li {
     font-family: "roboto condensed";
-    background-color: #1a1a1a; /* Green background */
-    border: 1px solid #333333; /* Green border */
+    background-color: #1a1a1a;
+    /* Green background */
+    transition-duration: 0.4s;
+    border: 1px solid #333333;
+    /* Green border */
     border-radius: 8px;
-    padding: 15px 90px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    width: 70%; /* Set a width if needed */
-    display: block; /* Make the buttons appear below each other */
-    
+    padding: 12px 50px;
+    /* Some padding */
+    text-align: center;
+    cursor: pointer;
+    /* Pointer/hand icon */
+    text-decoration: none;
+    display: block;
+    /* Make the buttons appear below each other */
+
 }
 
-.leftmenu button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
-  }
-  
-  /* Add a background color on hover */
-  .leftmenu button:hover {
+.leftmenu li:not(:last-child) {
+    border-bottom: none;
+    /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.leftmenu li:hover {
     background-color: #333333;
     font-family: "roboto condensed";
-  }
+}
+
+.rightmenu img {
+    width : auto;
+    height : 60px;
+    border-radius: 50%;
+    margin-top: 25px;
+
+}
+ .rect {
+clip-path:ellipse(33% 50%);
+ }
+
+ul {
+    list-style-type: none;
+}
+
+.imagemini {
+    
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px 5px;
+  
+}
+
+.imagemini img {
+    width: 210px;
+    height: auto;
+}
+
+.lienphoto {
+    position: relative;
+
+}
+
